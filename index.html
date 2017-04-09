@@ -29,9 +29,9 @@
       <p><b><i class="w3-margin-right"></i>The man in question</b></p>
       <div class="w3-show-inline-block">
         <div class="w3-bar w3-light-grey">
-          <button id="myButton" onclick="showParagraph()" class="w3-bar-item w3-button w3-dark-grey">More</button>
+          <button class="w3-bar-item w3-button w3-dark-grey">About</button>
           <a class="w3-bar-item w3-button" href="#career">Uni</a>
-          <button onclick="shmoke('pag1')" class="w3-button w3-bar-item w3-light-grey">Others &#9662;</button>
+          <button class="w3-button w3-bar-item w3-light-grey">Others &#9662;</button>
             <div id="pag1" class="w3-hide">
               <h6 class="w3-block w3-black w3-center-align">Interests</h6>  
               <a class="w3-button w3-block w3-light-grey w3-center-align" href="#culture">Culture</a>
@@ -57,9 +57,17 @@
       <i><p>(Which of course is just a rather wordy and pretentious way of saying: "He has different hobbies and interests". Then again being wordy and pretentious is part of the whole "ooh so mysterious" vibe he's trying to achieve with the design of this Website, so yeah whatever) </p></i>
 
 
-      <p id="blabla" class="w3-hide">More recently he embarked on the quest of creating this very blog. He intends to update it on a somewhat regular basis, to share some of his thoughts, the projects he's working on and other <em>pseudo-random</em> things he finds interesting. Hopefully those updates won't require him to write everything in third person all the time though. Because right now he feels it's just a matter of time before he starts making <s>more</s> grammatical errors. This style of writing is very counter intuitive, like for example right now he has no idea how he is supposed to finish this paragraph? Or is it a sentence? See? 
+      <div id="blabla" class="w3-hide">
+      <p>More recently he embarked on the quest of creating this very blog. He intends to update it on a somewhat regular basis, to share some of his thoughts, the projects he's working on and other <em>pseudo-random</em> things he finds interesting. Hopefully those updates won't require him to write everything in third person all the time though. Because right now he feels it's just a matter of time before he starts making <s>more</s> grammatical errors. This style of writing is very counter intuitive, like for example right now he has no idea how he is supposed to finish this paragraph? Or is it a sentence? See? 
       <br><br>He clearly has no idea of what he's doing. Well to be fair he kinda does but, he is by no means an expert. <strike> I guess</strike> that's the whole point of this blog, having access to the mind of a dude who is perhaps a bit of a <i>Johannes Factotum</i> but whose insights might just be what someone out there is looking for (even if it's for laughs or mere entertainment purposes) :)</p>
-     <button id="myButton" onclick="showParagraph()" class="w3-bar-item w3-button w3-grey w3-block">More</button>
+
+      <a class="w3-bar-item w3-button w3-grey w3-block">Go to Blog</a>
+      <br><br>
+      </div>
+     <button id="myButton" onclick="showParagraph()" class="w3-bar-item w3-button w3-grey w3-block">Read More</button>
+     <br>
+     <button onclick="shmoke('pag1')" class="w3-bar-item w3-button w3-grey w3-block">Something Different</button>
+
     </div>
 
 </div>
@@ -109,12 +117,32 @@
       </p>
       </div>
       <h4 style="text-align:center">Here you'll find</h4>
-      <a href="resources" class="w3-button w3-block w3-grey w3-center align" style="float:center">Helpful resources for Uni</a>
+      <button onclick="shmoke('unistuff')" class="w3-button w3-block w3-grey w3-center align" style="float:center"><strong>Helpful Resources for Uni</strong></button>
+      <div id="unistuff" class="w3-hide">
+        <br>
+        <a class="w3-block w3-button w3-center-align" href="http://carlos-camino.de/index.html">DS/AI/GAD</a>
+        <a class="w3-block w3-button w3-center-align" href="https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab">Videos on LinAlg</a>
+        <a class="w3-block w3-center-align w3-button" href="https://g.sicp.me/books/">EBooks on pretty much everything</a>
+        <a class="w3-block w3-center-align w3-button" href="https://www.youtube.com/user/DrSaradaHerke/playlists">Graph Theory</a>
+        <a class="w3-block w3-center-align w3-button" href="feed">More (Blog Posts)</a>
+        </div>
+       <br>
+      <button onclick="shmoke('projects')" class="w3-button w3-block w3-grey w3-center align"><strong>His Projects</strong></button>
       <br>
-      <a href="projects" class="w3-button w3-block w3-grey w3-center align"><strong>His Projects</strong></a>
+      <div id="projects" class="w3-hide">
+        <a class="w3-block w3-center-align w3-button" href="www.github.com/therealchisco">GitHub</a>
+        <a class="w3-block w3-center-align w3-button" href="feed">Blog Posts/Updates</a>
+        <a class="w3-block w3-center-align w3-button" href="feed">More</a>
+      </div>
+      <button onclick="shmoke('related')" class="w3-button w3-block w3-grey w3-center align"><strong>Other CS related stuff</strong></button>
+      <div id="related" class="w3-hide">
       <br>
-      <a href="computers" class="w3-button w3-block w3-grey w3-center align">Other CS related stuff</a>
-      <br>
+        <a class="w3-block w3-center-align w3-button" href="https://www.youtube.com/user/Computerphile">Computerphile (YT)</a>
+        <a class="w3-block w3-center-align w3-button" href="https://www.youtube.com/playlist?list=PLB4D701646DAF0817">Cryptography AOTP</a>
+        <a class="w3-block w3-center-align w3-button" href="https://www.youtube.com/watch?v=n8m7lFQ3njk">Hofstadter on Cognition</a>
+        <a class="w3-block w3-center-align w3-button" href="https://thedailywtf.com/">Humor</a>
+        <a class="w3-block w3-center-align w3-button" href="feed">More</a>
+      </div>
 
 
     </div>
@@ -183,6 +211,55 @@
         </div>
       <p>When it comes to "motion pictures" it's different, he doesn't rewatch the same thing over and over again, in fact he rarely even starts seeing new movies or TV-Shows. <br>Possibly because he's even more snobbish when it comes to films and dismisses most of the new hollywood releases, with a few exceptions of course. That being said sometimes he will find a hidden gem and share it with you here.</p>
     </div><br><br>
+</div>
+
+<div class="bgimg-4 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <h3 class="other__text glitch is-glitching" data-text="FOOD">COOKING</span>
+  </div>
+</div>
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center" id=culture>COOKING &amp; "ALCHEMY"</h3>
+
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="assets/img/Hipster3.svg" class="w3-round w3-image  alt="Photo of Me" width="500" height="333">
+      <p><b><i class="w3-margin-right"></i>funny caption</b></p>
+      <div class="w3-show-inline-block">
+        <div class="w3-bar w3-light-grey">
+          <a class="w3-bar-item w3-button w3-light-grey" href="#about">About</a>
+          <a class="w3-bar-item w3-button" href="#career">Uni</a>
+          <button onclick="shmoke('Food')" class="w3-button w3-bar-item w3-dark-grey">Food &#9662;</button>
+            <div id="Food" class="w3-hide">
+              <h6 class="w3-block w3-black w3-center-align">
+                Interests
+              </h6>
+              <a class="w3-button w3-block w3-light-grey w3-center-align" href="#culture">Culture</a>
+              <a class="w3-button w3-block w3-center-align w3-light-grey" href="#philosophy">Philosophy</a>
+              <a class="w3-center-align w3-button w3-block w3-light-grey" href="#maths">Maths &amp; Science</a>
+              <h6 class="w3-block w3-black w3-center-align">Hobbies</h6>
+              <a class="w3-button w3-block w3-center-align w3-dark-grey" href="#food">Food</a>
+              <a class="w3-button w3-block w3-center-align w3-light-grey" href="#film">Screenwriting</a>
+            </div>
+
+        </div>
+
+      </div>     
+      <br><br>
+    </div>
+    <br>
+
+    <div class="w3-col m6 w3-hide-small w3-padding-large w3-center-align" >
+      <div style="text-align:center"> 
+      <p>Chisco is a foodie and he really enjoys cooking. He has a limited equipment and is on a budget, but that doesn't stop him from trying to improve his skills, when he has a chance he also likes to experiment mixing cocktails. He is on a quest to create the ultimate "Chisco Sour" to go with his ultimate Bowl of Ramen or Sandwich<br>
+      He has a rather empirical approach to the whole thing, but to quote Adam Savage:
+      <blockquote>"The only difference between screwing around and science is writing it down!</blockquote>
+      This is why Chisco believes starting this blog is a good opportuniy to protocl and share his culinary creations. And make all the mistakes, so you don't have to.   
+      </p>
+      <h6><em>Soon you'll find a link to his</em></h6>
+      </div>
+      <a href="Food" class="w3-button w3-block w3-grey">Top Secret Recipes</a>
+      </div>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
 
