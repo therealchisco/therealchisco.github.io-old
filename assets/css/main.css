@@ -11,7 +11,7 @@ body, html {
   width: 100vw;
   height: 100vh;
   background-color: black;
-  background-image: url(/assets/background1.gif);
+  background-image: url(/assets/img/background1.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -204,6 +204,4 @@ a {
         background-attachment: scroll;
     }
 }
-/*body { 
-    background-size: 20px 20px;
-    background-image: linear-gradient(to right, grey 1px, transparent 1px), linear-gradient(to bottom, grey 1px, transparent 1px);
+
