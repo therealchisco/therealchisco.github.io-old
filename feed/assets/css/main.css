@@ -1,0 +1,207 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #000;
+    line-height: 1.7;
+}
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  background-image: url(/assets/img/background1.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.other__text {
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100px;
+  text-transform: uppercase;
+}
+
+.center__text {
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 120px;
+  text-transform: uppercase;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.glitch {
+  position: relative;
+  color: white;
+  mix-blend-mode: lighten;
+}
+.glitch:before, .glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: black;
+  clip: rect(0, 0, 0, 0);
+}
+.glitch:before {
+  left: -1px;
+  text-shadow: 1px 0 rgba(255, 200, 200, 0.7);
+}
+.glitch:after {
+  left: 1px;
+  text-shadow: -1px 0 rgba(255, 255, 255, 0.7);
+}
+.glitch:hover:before {
+  text-shadow: 4px 0 rgba(255, 200, 200, 200.7);
+  -webkit-animation: glitch-loop-1 1.8s infinite ease-in-out alternate-reverse;
+          animation: glitch-loop-1 1.8s infinite ease-in-out alternate-reverse;
+}
+.glitch:hover:after {
+  text-shadow: -5px 0 rgba(200, 200, 255, 0.7);
+  -webkit-animation: glitch-loop-2 0.8s infinite ease-in-out alternate-reverse;
+          animation: glitch-loop-2 0.8s infinite ease-in-out alternate-reverse;
+}
+
+@-webkit-keyframes glitch-loop-1 {
+  0% {
+    clip: rect(36px, 9999px, 9px, 0);
+  }
+  25% {
+    clip: rect(25px, 9999px, 99px, 0);
+  }
+  50% {
+    clip: rect(50px, 9999px, 102px, 0);
+  }
+  75% {
+    clip: rect(30px, 9999px, 92px, 0);
+  }
+  100% {
+    clip: rect(91px, 9999px, 98px, 0);
+  }
+}
+
+@keyframes glitch-loop-1 {
+  0% {
+    clip: rect(36px, 9999px, 9px, 0);
+  }
+  25% {
+    clip: rect(25px, 9999px, 99px, 0);
+  }
+  50% {
+    clip: rect(50px, 9999px, 102px, 0);
+  }
+  75% {
+    clip: rect(30px, 9999px, 92px, 0);
+  }
+  100% {
+    clip: rect(91px, 9999px, 98px, 0);
+  }
+}
+@-webkit-keyframes glitch-loop-2 {
+  0% {
+    top: -1px;
+    left: 1px;
+    clip: rect(65px, 9999px, 119px, 0);
+  }
+  25% {
+    top: -6px;
+    left: 4px;
+    clip: rect(79px, 9999px, 19px, 0);
+  }
+  50% {
+    top: -3px;
+    left: 2px;
+    clip: rect(68px, 9999px, 11px, 0);
+  }
+  75% {
+    top: 0px;
+    left: -4px;
+    clip: rect(95px, 9999px, 53px, 0);
+  }
+  100% {
+    top: -1px;
+    left: -1px;
+    clip: rect(31px, 9999px, 149px, 0);
+  }
+}
+@keyframes glitch-loop-2 {
+  0% {
+    top: -1px;
+    left: 1px;
+    clip: rect(65px, 9999px, 119px, 0);
+  }
+  25% {
+    top: -6px;
+    left: 4px;
+    clip: rect(79px, 9999px, 19px, 0);
+  }
+  50% {
+    top: -3px;
+    left: 2px;
+    clip: rect(68px, 9999px, 11px, 0);
+  }
+  75% {
+    top: 0px;
+    left: -4px;
+    clip: rect(95px, 9999px, 53px, 0);
+  }
+  100% {
+    top: -1px;
+    left: -1px;
+    clip: rect(31px, 9999px, 149px, 0);
+  }
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url("/assets/img/background1.gif");
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("/assets/img/background4.gif");
+    min-height: 500px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("/assets/img/background3.gif");
+    min-height: 400px;
+}
+
+.bgimg-4 {
+    background-image: url("/assets/img/background5.gif");
+    min-height: 300px;
+}
+.ptrt-1{ 
+  im
+}
+
+
+
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
