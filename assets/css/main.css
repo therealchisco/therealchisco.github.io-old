@@ -192,7 +192,10 @@ a {
   im
 }
 
-
+.muelto {
+    background-image: url("/assets/img/tamuelto2.gif");
+    min-height: 100%;
+}
 
 
 .w3-wide {letter-spacing: 10px;}
