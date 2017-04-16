@@ -16,6 +16,18 @@ body, html {
   background-position: center;
   background-size: cover;
 }
+.center2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  background-image: url(/assets/img/tamuelto2.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 .other__text {
   margin: auto;
