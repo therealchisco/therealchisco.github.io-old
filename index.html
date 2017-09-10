@@ -1,271 +1,126 @@
 <!DOCTYPE html>
 <html>
-<title>My Baby</title>
+<title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-<style>
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('/w3images/onepage_restaurant.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+video#bgvid { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover; 
+}
 
-.w3-theme {color:#fff !important;background-color:#3f51b5 !important}
-.w3-theme-light {color:#000 !important;background-color:#e8eaf6 !important}
-.w3-theme-dark {color:#fff !important;background-color:#1a237e !important}
+.container {
+width: 100%;
+height: 100%;
+position: absolute;
+padding:0;
+margin:0;
+left: 0px;
+top: 0px;
+z-index: -1000;
+overflow:hidden;
+}
 
-.w3-theme-l5 {color:#000 !important;background-color:#e8eaf6 !important}
-.w3-theme-l4 {color:#000 !important;background-color:#c5cae9 !important}
-.w3-theme-l3 {color:#000 !important;background-color:#9fa8da !important}
-.w3-theme-l2 {color:#fff !important;background-color:#7986cb !important}
-.w3-theme-l1 {color:#fff !important;background-color:#5c6bc0 !important}
-.w3-theme-d1 {color:#fff !important;background-color:#3949ab !important}
-.w3-theme-d2 {color:#fff !important;background-color:#303f9f !important}
-.w3-theme-d3 {color:#fff !important;background-color:#283593 !important}
-.w3-theme-d4 {color:#fff !important;background-color:#1a237e !important}
+.videoPlayer {
+    min-height: 100%;
+    min-width:100%; - if fit to width
+position:absolute;
+bottom:0;
+left:0;
+}
 
-.w3-theme-action {color:#fff !important;background-color:#311b92 !important}
-.w3-text-theme {color:#1a237e !important}
-
-.w3-theme-pink {color:#000 !important; background-color:#f7cac9 !important}
 </style>
-<body class="w3-theme-light">
-
-<!-- The Modal -->
-<div id="id01" class="w3-modal">
-  <div class="w3-modal-content">
-    <div class="w3-container">
-      <span onclick="modalisho_rip()"
-      class="w3-button w3-display-topright">&times;</span>
-      <p>Some text in the Modal..</p>
-      <p>Some text in the Modal..</p>
-    </div>
-  </div>
-</div>
-
-
-<!-- Top container -->
-<div class="w3-bar w3-top w3-indigo w3-large" style="z-index:4">
-  <button class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-grey" onclick="w3_open();">   
-      <img src="logobien.png" class="w3-circle w3-margin-right" style="height:50px"></button>
-      <h3 class="w3-center"><b> Charlie </b></h3>
-</div>
-
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-collapse w3-theme-light w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
-  <div class="w3-container w3-row">
-    <div class="w3-col s4">
-    </div>
-    <div class="w3-col s8 w3-bar">
-      <span>Your <strong>Baby</strong></span><br>
-      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
-      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user"></i></a>
-      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-cog"></i></a>
-    </div>
-  </div>
-  <hr>
-  <div class="w3-container">
-    <h5>Dashboard</h5>
-  </div>
-  <div class="w3-bar-block">
-    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-eye fa-fw"></i>  Overview</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding w3-indigo"><i class="fa fa-users fa-fw"></i>Children</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bank fa-fw"></i>  General</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-history fa-fw"></i>  History</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  Settings</a><br><br>
-  </div>
-</nav>
-
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:300px;margin-top:43px;">
-
-  <!-- Header -->
-  <header class="w3-container" style="padding-top:22px">
-    <br><br>
-  </header>
-
-  <div class="w3-row-padding w3-margin-bottom">
-    <div class="w3-quarter">
-      <div class="w3-container w3-theme-d1 w3-padding-16">
-        <div class="w3-left"><i class="fa fa-heartbeat w3-xxxlarge"></i></div>
-        <div class="w3-right">
-          <h3>130</h3>
-        </div>
-        <div class="w3-clear"></div>
-        <h4>Pulse</h4>
-      </div>
-    </div>
-    <div class="w3-quarter">
-      <div class="w3-container w3-theme-pink w3-padding-16">
-        <div class="w3-left"><i class="fa fa-thermometer-half w3-xxxlarge" ></i></div>
-        <div class="w3-right">
-          <h3>38</h3>
-        </div>
-        <div class="w3-clear"></div>
-        <h4>Temperature</h4>
-      </div>
-    </div>
-    <div class="w3-quarter">
-      <div class="w3-container w3-theme-d3 w3-padding-16">
-        <div class="w3-left"><i class="fa fa-bed w3-xxxlarge"></i></div>
-        <div class="w3-right">
-          <h3>13</h3>
-        </div>
-        <div class="w3-clear"></div>
-        <h4>Sleep</h4>
-      </div>
-    </div>
-    <div class="w3-quarter">
-      <div class="w3-container w3-theme-d4 w3-text-white w3-padding-16">
-        <div class="w3-left"><i class="fa fa-arrow-up w3-xxxlarge"></i></div>
-        <div class="w3-right">
-          <h3>up</h3>
-        </div>
-        <div class="w3-clear "></div>
-        <h4> Orientation</h4>
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-panel">
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-third w3-center">
-        <h5></h5>
-        <br>
-        <img src="baby1.png" style="width:70%" alt="Baby's Picture">
-      </div>
-      <div class="w3-twothird">
-        <h5 class="w3-center">Infos</h5>
-        <table class="w3-table-all w3-bordered w3-striped w3-white">
-          <tr class="w3-hover-pink">
-            <td><i class="fa fa-stethoscope w3-text-indigo w3-large"></i></td>
-            <td>Breathing</td>
-            <td><i>Normal</i></td>
-          </tr>
-          <tr class="w3-hover-pink">
-            <td><i class="fa fa-bell w3-text-indigo  w3-large"></i></td>
-            <td>Latest notification.</td>
-            <td><i>40 mins ago</i></td>
-          </tr>
-         
-          <tr class="w3-hover-pink">
-            <td><i class="fa fa-cutlery w3-text-indigo w3-large"></i></td>
-            <td>Latest meal.</td>
-            <td id="meal" class="w3-button" type="button" onclick='updateTime(this.id)'><i>30 mins ago</i></td>
-          </tr>
-          <tr class="w3-hover-pink">
-            <td><i class="fa fa-tint w3-text-indigo w3-large "></i></td>
-            <td>Latest diaper change.</td>
-            <td id="diaper" class="w3-button" type="button" onclick='updateTime(this.id)'><i>2 hrs ago</i></td>
-          </tr>
-          <tr class="w3-hover-pink">
-            <td><i class="fa fa-bath w3-text-indigo w3-large"></i></td>
-            <td >Latest bath.</td>
-            <td id="bath" class="w3-button" type="button" onclick='updateTime(this.id)'><i>10 hrs ago</i></td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  </div>
- 
-
-
-  <div class="w3-container">
-    <h5>Charlie's Journal</h5>
-    <div class="w3-row">
-
-      <div class="w3-col m10 w3-container">
-        <h4>Dad <span class="w3-opacity w3-medium">Aug 29, 2017, 9:12 PM</span></h4>
-        <p>Charlie said his first words today! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
-      </div>
-
-
-      <div class="w3-col m10 w3-container">
-        <h4>Mum <span class="w3-opacity w3-medium">Aug 8, 2017, 12:00 AM</span></h4>
-        <p>We took Charlie to the beach today :) ! Lorem ipsum dolor sit amet
-        </p><br>
-      </div>
-
-      <div class="w3-col m10 w3-container">
-        <h4>Mum and Dad <span class="w3-opacity w3-medium">Jun 5, 2017, 4:02 PM</span></h4>
-        <p>We went to the Hospital today, everything was fine ! Lorem ipsum dolor sit amet dorem ipsum dolor sit amem ipsum dolor sit ametus
-        </p><br>
-      </div>
-
-
-
-    </div>
-
-
-  <!-- End page content -->
-</div>
-
-
-<button onclick="modalisho()"
-class="w3-button">Open Modal</button>
-
-<!-- The Modal -->
-<div id="id01" class="w3-modal">
-  <div class="w3-modal-content">
-    <div class="w3-container">
-      <span onclick="modalisho_rip()"
-      class="w3-button w3-display-topright">&times;</span>
-      <p>Some text in the Modal..</p>
-      <p>Some text in the Modal..</p>
-    </div>
-  </div>
-</div>
-
-
-
-
-<script>
-// Get the Sidebar
-var mySidebar = document.getElementById("mySidebar");
-
-// Get the DIV with overlay effect
-var overlayBg = document.getElementById("myOverlay");
-
-
-function modalisho_rip(){
-  document.getElementById('id01').style.display='none';
-}
-
-function modalisho(){
-  document.getElementById('id01').style.display='block';
-}
-
-
-// Toggle between showing and hiding the sidebar, and add overlay effect
-function w3_open() {
-    if (mySidebar.style.display === 'block') {
-        mySidebar.style.display = 'none';
-        overlayBg.style.display = "none";
-    } else {
-        mySidebar.style.display = 'block';
-        overlayBg.style.display = "block";
-    }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-    overlayBg.style.display = "none";
-}
-function updateTime(x) {
-    document.getElementById(x).innerHTML = "<i>Just Now</i>";
-}
-</script>
-</head>
 <body>
+<div class="container">
 
 
-</script>
+
+
+
+
+
+
+
+<video class="videoPlayer" playsinline autoplay muted loop poster="mybaby.jpg" id="bgvid">
+    <source src="mybaby.webm" type="video/webm">
+    <source src="mybaby.mp4" type="video/mp4">
+</video>
+
+
+
+
+</div>
+
+
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+        <img src="img_avatar4.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+      </div>
+
+      <form class="w3-container" action="/action_page.php">
+        <div class="w3-section">
+          <label><b>Username</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+          <label><b>Password</b></label>
+          <input class="w3-input w3-border" type="password" placeholder="Enter Password" name="psw" required>
+          <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Login</button>
+          <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
+        </div>
+      </form>
+
+      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+        <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle w3-jumbo w3-animate-opacity">
+    <p><img src="logobien.png" class="w3-circle w3-margin-right" style="width:400px"></p>
+  </div>
+  <div class="w3-display-bottommiddle w3-center w3-container">
+
+    <button class="w3-button w3-xlarge w3-white" onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+    <p class="w3-large"><b>Sign Up<b></p>
+  </p>
+  </div>
+</div>
 
 </body>
 </html>
+
