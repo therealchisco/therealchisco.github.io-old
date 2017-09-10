@@ -31,10 +31,24 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
 <body class="w3-theme-light">
 
+<!-- The Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="modalisho_rip()"
+      class="w3-button w3-display-topright">&times;</span>
+      <p>Some text in the Modal..</p>
+      <p>Some text in the Modal..</p>
+    </div>
+  </div>
+</div>
+
+
 <!-- Top container -->
-<div class="w3-bar w3-top w3-theme-d1 w3-large" style="z-index:4">
-  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();">   
-      <img src="logobien.png" class="w3-circle w3-margin-right" style="width:50px"></button>
+<div class="w3-bar w3-top w3-indigo w3-large" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-grey" onclick="w3_open();">   
+      <img src="logobien.png" class="w3-circle w3-margin-right" style="height:50px"></button>
+      <h3 class="w3-center"><b> Charlie </b></h3>
 </div>
 
 <!-- Sidebar/menu -->
@@ -55,12 +69,8 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   </div>
   <div class="w3-bar-block">
     <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-users fa-fw"></i>  Overview</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-eye fa-fw"></i>  Views</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Traffic</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bullseye fa-fw"></i>  Geo</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-diamond fa-fw"></i>  Orders</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bell fa-fw"></i>  News</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-eye fa-fw"></i>  Overview</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding w3-indigo"><i class="fa fa-users fa-fw"></i>Children</a>
     <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bank fa-fw"></i>  General</a>
     <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-history fa-fw"></i>  History</a>
     <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  Settings</a><br><br>
@@ -76,7 +86,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
   <!-- Header -->
   <header class="w3-container" style="padding-top:22px">
-    <h5><b><i class="fa fa-child"></i> Baby's Name here</b></h5>
+    <br><br>
   </header>
 
   <div class="w3-row-padding w3-margin-bottom">
@@ -84,17 +94,17 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       <div class="w3-container w3-theme-d1 w3-padding-16">
         <div class="w3-left"><i class="fa fa-heartbeat w3-xxxlarge"></i></div>
         <div class="w3-right">
-          <h3>52</h3>
+          <h3>130</h3>
         </div>
         <div class="w3-clear"></div>
         <h4>Pulse</h4>
       </div>
     </div>
     <div class="w3-quarter">
-      <div class="w3-container w3-theme-d2 w3-padding-16">
+      <div class="w3-container w3-theme-pink w3-padding-16">
         <div class="w3-left"><i class="fa fa-thermometer-half w3-xxxlarge" ></i></div>
         <div class="w3-right">
-          <h3>99</h3>
+          <h3>38</h3>
         </div>
         <div class="w3-clear"></div>
         <h4>Temperature</h4>
@@ -104,7 +114,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       <div class="w3-container w3-theme-d3 w3-padding-16">
         <div class="w3-left"><i class="fa fa-bed w3-xxxlarge"></i></div>
         <div class="w3-right">
-          <h3>23</h3>
+          <h3>13</h3>
         </div>
         <div class="w3-clear"></div>
         <h4>Sleep</h4>
@@ -114,7 +124,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       <div class="w3-container w3-theme-d4 w3-text-white w3-padding-16">
         <div class="w3-left"><i class="fa fa-arrow-up w3-xxxlarge"></i></div>
         <div class="w3-right">
-          <h3>Face up</h3>
+          <h3>up</h3>
         </div>
         <div class="w3-clear "></div>
         <h4> Orientation</h4>
@@ -126,35 +136,37 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-third w3-center">
         <h5></h5>
-        <img src="baby1.png" style="width:100%" alt="Baby's Picture">
+        <br>
+        <img src="baby1.png" style="width:70%" alt="Baby's Picture">
       </div>
       <div class="w3-twothird">
         <h5 class="w3-center">Infos</h5>
         <table class="w3-table-all w3-bordered w3-striped w3-white">
           <tr class="w3-hover-pink">
-            <td><i class="fa fa-stethoscope w3-text-blue w3-large"></i></td>
+            <td><i class="fa fa-stethoscope w3-text-indigo w3-large"></i></td>
             <td>Breathing</td>
             <td><i>Normal</i></td>
           </tr>
           <tr class="w3-hover-pink">
-            <td><i class="fa fa-bell w3-text-blue  w3-large"></i></td>
+            <td><i class="fa fa-bell w3-text-indigo  w3-large"></i></td>
             <td>Latest notification.</td>
-            <td><i>Crying, 40 mins ago</i></td>
+            <td><i>40 mins ago</i></td>
           </tr>
+         
           <tr class="w3-hover-pink">
-            <td><i class="fa fa-cutlery w3-text-blue w3-large"></i></td>
+            <td><i class="fa fa-cutlery w3-text-indigo w3-large"></i></td>
             <td>Latest meal.</td>
-            <td><i>30 mins ago</i></td>
+            <td id="meal" class="w3-button" type="button" onclick='updateTime(this.id)'><i>30 mins ago</i></td>
           </tr>
           <tr class="w3-hover-pink">
-            <td><i class="fa fa-tint w3-text-blue w3-large"></i></td>
+            <td><i class="fa fa-tint w3-text-indigo w3-large "></i></td>
             <td>Latest diaper change.</td>
-            <td><i>2 hrs ago</i></td>
+            <td id="diaper" class="w3-button" type="button" onclick='updateTime(this.id)'><i>2 hrs ago</i></td>
           </tr>
           <tr class="w3-hover-pink">
-            <td><i class="fa fa-bath w3-text-blue w3-large"></i></td>
-            <td>Latest bath.</td>
-            <td><i>10 hrs ago</i></td>
+            <td><i class="fa fa-bath w3-text-indigo w3-large"></i></td>
+            <td >Latest bath.</td>
+            <td id="bath" class="w3-button" type="button" onclick='updateTime(this.id)'><i>10 hrs ago</i></td>
           </tr>
         </table>
       </div>
@@ -164,23 +176,53 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
 
   <div class="w3-container">
-    <h5>Baby's Name Journal</h5>
+    <h5>Charlie's Journal</h5>
     <div class="w3-row">
 
       <div class="w3-col m10 w3-container">
-        <h4>Dad <span class="w3-opacity w3-medium">Sep 29, 2017, 9:12 PM</span></h4>
+        <h4>Dad <span class="w3-opacity w3-medium">Aug 29, 2017, 9:12 PM</span></h4>
         <p>Charlie said his first words today! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
       </div>
+
+
+      <div class="w3-col m10 w3-container">
+        <h4>Mum <span class="w3-opacity w3-medium">Aug 8, 2017, 12:00 AM</span></h4>
+        <p>We took Charlie to the beach today :) ! Lorem ipsum dolor sit amet
+        </p><br>
+      </div>
+
+      <div class="w3-col m10 w3-container">
+        <h4>Mum and Dad <span class="w3-opacity w3-medium">Jun 5, 2017, 4:02 PM</span></h4>
+        <p>We went to the Hospital today, everything was fine ! Lorem ipsum dolor sit amet dorem ipsum dolor sit amem ipsum dolor sit ametus
+        </p><br>
+      </div>
+
+
+
     </div>
 
 
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-16 w3-theme-d1">
-
-  </footer>
-
   <!-- End page content -->
 </div>
+
+
+<button onclick="modalisho()"
+class="w3-button">Open Modal</button>
+
+<!-- The Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="modalisho_rip()"
+      class="w3-button w3-display-topright">&times;</span>
+      <p>Some text in the Modal..</p>
+      <p>Some text in the Modal..</p>
+    </div>
+  </div>
+</div>
+
+
+
 
 <script>
 // Get the Sidebar
@@ -188,6 +230,16 @@ var mySidebar = document.getElementById("mySidebar");
 
 // Get the DIV with overlay effect
 var overlayBg = document.getElementById("myOverlay");
+
+
+function modalisho_rip(){
+  document.getElementById('id01').style.display='none';
+}
+
+function modalisho(){
+  document.getElementById('id01').style.display='block';
+}
+
 
 // Toggle between showing and hiding the sidebar, and add overlay effect
 function w3_open() {
@@ -205,6 +257,14 @@ function w3_close() {
     mySidebar.style.display = "none";
     overlayBg.style.display = "none";
 }
+function updateTime(x) {
+    document.getElementById(x).innerHTML = "<i>Just Now</i>";
+}
+</script>
+</head>
+<body>
+
+
 </script>
 
 </body>
