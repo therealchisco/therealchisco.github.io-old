@@ -31,21 +31,11 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
 <body class="w3-theme-light">
 
-<!-- The Modal -->
-<div id="id01" class="w3-modal">
-  <div class="w3-modal-content">
-    <div class="w3-container">
-      <span onclick="modalisho_rip()"
-      class="w3-button w3-display-topright">&times;</span>
-      <p>Some text in the Modal..</p>
-      <p>Some text in the Modal..</p>
-    </div>
-  </div>
-</div>
+
 
 
 <!-- Top container -->
-<div class="w3-bar w3-top w3-indigo w3-large" style="z-index:4">
+<div class="w3-bar w3-top w3-indigo w3-small" style="z-index:4">
   <button class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-grey" onclick="w3_open();">   
       <img src="../logobien.png" class="w3-circle w3-margin-right" style="height:50px"></button>
       <h3 class="w3-center"><b> Charlie </b></h3>
@@ -206,21 +196,23 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </div>
 
 
-<button onclick="modalisho()"
+<button onclick="setTimeout(modalisho,3000)"
 class="w3-button w3-bottommiddle">Start Demo</button>
-
-<!-- The Modal -->
-<div id="id01" class="w3-modal">
-  <div class="w3-modal-content">
+<div class="w3-display-container">
+<div id="id01" class="w3-modal w3-display-center">
+  <div class="w3-modal-content w3-red">
     <div class="w3-container">
       <span onclick="modalisho_rip()"
       class="w3-button w3-display-topright">&times;</span>
-      <p>Some text in the Modal..</p>
-      <p>Some text in the Modal..</p>
+      <span class="w3-center w3-display-center" >
+      <h3>ATTENTION!!!</h3>
+      <h4>Ursula is crying</h4>
+      <img src="../baby2.png" class="w3-display-center" style="width:50%" alt="Baby's Picture">
+    </span>
     </div>
   </div>
 </div>
-
+</div>
 
 
 
