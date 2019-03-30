@@ -4,15 +4,14 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Writing an **About** page is no easy task.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+You want to be:
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+- open but private
 
+- likeable but professional
 
-[jekyll-organization]: https://github.com/jekyll
+- confident but humble
+
+And unlike dating apps, leaving it blank, filling it with some "witty" oneliner you found online or with a series of seemingly redundant emojis is not really an option.
