@@ -8,10 +8,12 @@ Writing an **About** page is no easy task.
 
 You want to be:
 
-- open but private
+- open yet private
 
-- likeable but professional
+- likeable yet professional
 
-- confident but humble
+- confident yet humble
 
-And unlike dating apps, leaving it blank, filling it with some "witty" oneliner you found online or with a series of seemingly redundant emojis is not really an option.
+And unlike dating apps neither leaving it blank nor filling it with emojis or some clever oneliner seems appropiate.
+
+> Here's what I can tell you about Chisco.org
