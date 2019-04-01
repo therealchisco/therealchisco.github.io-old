@@ -9,7 +9,7 @@ author: Grup0
 description: > # "Write an awesome description for your new site here. 
   RMS es el sistema de menús digitales para restaurantes más simple, eficiente y económico
 copyright: 'Copyright &copy; 2019 RMS. All Rights Reserved.'
-
+future: true
 # ----------------------- #
 #    Jekyll & Plugins     #
 # ----------------------- #
