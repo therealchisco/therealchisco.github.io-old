@@ -1,8 +1,12 @@
 ---
 layout: default
-img: phones.png
+img: logo.png
 category: Services
-title: Google Web Fonts and<br>Font Awesome Icons
+title: El Menú del Futuro
 description: |
 ---
-This template features the 'Lato' font, part of the [Google Web Font library](http://www.google.com/fonts), as well as [icons from Font Awesome](http://fontawesome.io).
+**La aplicación no solo remplaza la función de los menús tradicionales sino que introduce una serie de cambios y nuevas posibilidades.**
+
+- Actualizaciones Instantáneas
+> RMS le permite al administrador actualizar el menú de forma dinámica y en tiempo real, esto es realmente útil para informar a los clientes sobre el menú de la semana, promociones del día, al igual que informar si un platillo ya se agoto sin necesidad de tener que imprimir nuevos menús cada vez
+

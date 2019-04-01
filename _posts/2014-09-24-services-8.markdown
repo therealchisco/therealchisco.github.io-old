@@ -1,0 +1,13 @@
+---
+layout: default
+img: stats.jpeg
+category: Services
+title: Más información
+description: 
+---
+
+- Información ilimitada
+> RMS no está limitado a un número de páginas impresas como los menús tradicionales, por lo tanto es posible mostrar imágenes de alta calidad y descripciones extensas de los ítemes
+
+- Una gran base de datos 
+> RMS permite ademas consultar y evaluar la información de las ventas para que el administrador pueda ver cuales fueron los platos mas vendidos y cuales los menos, eso permite tomar las mejores decisiones para su negocio

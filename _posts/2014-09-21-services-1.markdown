@@ -1,8 +1,17 @@
 ---
 layout: default
-img: ipad.png
+img: gif-browse.gif
 category: Services
-title: Death to the Stock Photo:<br>Special Thanks
+title: Navegabilidad Simple
 description: |
 ---
-  A special thanks to [Death to the Stock Photo](http://join.deathtothestockphoto.com/) for providing the photographs that you see in this template.  Visit their website to become a member!
+**Nos enfocamos en brindar una experiencia intuitiva y accesible
+que le permite al comensal encontrar lo que esta buscando**
+
+- Filtrar por Categorías
+
+> En cuestión de solo un click el comensal puede filtrar el tipo de ítem que quiere ver.<br> <br> Por ejemplo: Entrada, Plato Principal, Postre, Especial del Día etc
+
+- Búsqueda de Items
+
+>El comensal puede buscar directamente el nombre del plato que esta buscando o bien describir lo que desea

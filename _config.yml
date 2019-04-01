@@ -2,10 +2,10 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: RMS: Restaurant Menu System
-email: restaurantms@gmail.com
-author: Grup0
+url: http://therealchisco.github.io
+title: 'RMS: Restaurant Menu System'
+email: restaurant.menu.system@gmail.com
+author: Grupo zero
 description: > # "Write an awesome description for your new site here. 
   RMS es el sistema de menús digitales para restaurantes más simple, eficiente y económico
 copyright: 'Copyright &copy; 2019 RMS. All Rights Reserved.'
@@ -25,3 +25,5 @@ permalink: pretty
 social:
   - title: twitter
     url: https://twitter.com/ResMenuSystem 
+  - title: email
+    url: restaurant.menu.system@gmail.com
